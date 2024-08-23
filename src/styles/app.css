@@ -1,12 +1,6 @@
 @import "tailwindcss";
-@import 'node_modules/vanilla-framework';
-
-
-@include vanilla;
 
 @theme {
-
-
     --font-family-display: 'Ubuntu, Arial, "libra sans", sans-serif';
     --breakpoint-3xl: 1920px;
 
