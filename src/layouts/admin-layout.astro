@@ -1,0 +1,10 @@
+---
+import AdminPanelLayout from "@/components/admin-panel/admin-panel-layout";
+import Layout from "@/layouts/Layout.astro";
+
+---
+<Layout title="adminpanel" description="subdescription">
+  <AdminPanelLayout client:load >
+    <slot />
+  </AdminPanelLayout>
+</Layout>

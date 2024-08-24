@@ -1,12 +1,11 @@
-
-import { defineConfig } from 'astro/config';
-import react from "@astrojs/react";
-import MillionLint from "@million/lint";
+import react from '@astrojs/react'
 import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'astro/config'
 
+// https://astro.build/config
 export default defineConfig({
-    vite: {
-        plugins: [tailwindcss()],
+	vite: {
+		plugins: [tailwindcss()],
 		build: {
 			cssMinify: 'lightningcss'
 		}
@@ -16,5 +15,6 @@ export default defineConfig({
 		defaultStrategy: 'viewport',
 		prefetchAll: true
 	},
-  integrations: [MillionLint.astro(), react()]
-});
+	integrations: [react()],
+	output: 'server'
+})
